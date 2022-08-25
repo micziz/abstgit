@@ -1,0 +1,16 @@
+{
+  "name": "git-util",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "yarn run eslint src --fix",
+    "prettier": "yarn run prettier --write",
+    "format": "yarn lint && yarn prettier"
+  },
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.7.1"
+  }
+}
