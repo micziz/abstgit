@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "A set of helper functions to use git",
   "homepage": "https://github.com/micziz/abstgit#readme",
-  "main": "index.js",
+  "main": "bundle.js",
   "type": "module",
   "scripts": {
     "lint": "yarn run eslint src --fix",
