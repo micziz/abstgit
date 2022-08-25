@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Git-Utils</h1>
+<h1 style="text-align: center;">Git-Utilities</h1>
 
 <p style="text-align: center;">A set of helper functions for git</p>
 
@@ -6,22 +6,22 @@
 
 ## Introduction
 
-Git has revolutionized the developement space. It helps massevely with collaboration in small and big projects. But there is no modern abstraction over git that you can use for your projects. Git-Utils aims to be a minimal (no dependencies) set of helper functions for working with git. 
+Git has revolutionized the developement space. It helps massevely with collaboration in small and big projects. But there is no modern abstraction over git that you can use for your projects. Git-Utilities aims to be a minimal (no dependencies) set of helper functions for working with git. 
 
 ## Installation
 
 ```sh
-npm i --save-dev git-utils
+npm i --save-dev git-utilities
 ```
 
 Yarn & pnpm are also supported.
 
-git-utils requires node v12 (you need to enable esm), but we officially support only the latest LTS and it's tested on the latest version of Node. if you encounter issues with a version below the LTS, don't expect much help.
+Git-Utilities requires node v12 (you need to enable esm), but we officially support only the latest LTS and it's tested on the latest version of Node. if you encounter issues with a version below the LTS, don't expect much help.
 
 ## Usage
 
 ```js
-import { clone } from 'git-utils/clone/clone';
+import { clone } from 'git-utilities/clone/clone';
 
 clone("micziz/git-utlis")
 ```
@@ -31,9 +31,9 @@ This will clone in the current node direcotry (generally the root of your projec
 If you want to clone to a specific direcotry, use cloneTo.
 
 ```js
-import { cloneTo } from 'git-utils/clone/clone';
+import { cloneTo } from 'git-utilities/clone/clone';
 
-cloneTo("micziz/git-utils", "utils")
+cloneTo("micziz/git-utilities", "utils")
 ```
 
 Check the [documentation](docs/) for all the available utilities!
