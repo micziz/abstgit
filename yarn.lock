@@ -495,9 +495,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"git-util@workspace:.":
+"git-utilities@workspace:.":
   version: 0.0.0-use.local
-  resolution: "git-util@workspace:."
+  resolution: "git-utilities@workspace:."
   dependencies:
     eslint: ^8.22.0
     eslint-config-prettier: ^8.5.0
