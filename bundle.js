@@ -1,8 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var child_process = require('child_process');
+import { exec } from 'child_process';
 
 function checkWindow() {
     if (typeof window !== 'undefined'){
@@ -13,7 +9,7 @@ function checkWindow() {
 // Add a file
 function add_(files){
     checkWindow();
-    child_process.exec(`git add ${files}`, (err) => {
+    exec(`git add ${files}`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -22,7 +18,7 @@ function add_(files){
 
 function branch_(branchName){
     checkWindow();
-    child_process.exec(`git branch ${branchName}`, (err) => {
+    exec(`git branch ${branchName}`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -31,7 +27,7 @@ function branch_(branchName){
 
 function branchAndMove_(branchName){
     checkWindow();
-    child_process.exec(`git branch -m ${branchName}`, (err) => {
+    exec(`git branch -m ${branchName}`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -40,7 +36,7 @@ function branchAndMove_(branchName){
 
 function checkout_(branchName){
     checkWindow();
-    child_process.exec(`git checkout ${branchName}`, (err) => {
+    exec(`git checkout ${branchName}`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -49,7 +45,7 @@ function checkout_(branchName){
 
 function clone_(repo){
     checkWindow();
-    child_process.exec(`git clone https://github.com/${repo}`, (err) => {
+    exec(`git clone https://github.com/${repo}`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -58,7 +54,7 @@ function clone_(repo){
 
 function cloneTo_(repo, location){
     checkWindow();
-    child_process.exec(`git clone https://github.com/${repo} ${location}`, (err) => {
+    exec(`git clone https://github.com/${repo} ${location}`, (err) => {
         if (err) {
           return console.log('Error running the command');
         }             
@@ -67,7 +63,7 @@ function cloneTo_(repo, location){
 
 function init_(){
     checkWindow();
-    child_process.exec(`git init`, (err) => {
+    exec(`git init`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -76,7 +72,7 @@ function init_(){
 
 function initToDir_(dir){
     checkWindow();
-    child_process.exec(`git init ${dir}`, (err) => {
+    exec(`git init ${dir}`, (err) => {
         if (err) {
             return console.log('Error running the command');
         }
@@ -92,11 +88,4 @@ const cloneTo = cloneTo_();
 const init = init_();
 const initToDir = initToDir_();
 
-exports.add = add;
-exports.branch = branch;
-exports.branchAndMove = branchAndMove;
-exports.checkout = checkout;
-exports.clone = clone;
-exports.cloneTo = cloneTo;
-exports.init = init;
-exports.initToDir = initToDir;
+export { add, branch, branchAndMove, checkout, clone, cloneTo, init, initToDir };
