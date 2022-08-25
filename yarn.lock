@@ -74,6 +74,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"abstgit@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "abstgit@workspace:."
+  dependencies:
+    eslint: ^8.22.0
+    eslint-config-prettier: ^8.5.0
+    prettier: 2.7.1
+  languageName: unknown
+  linkType: soft
+
 "acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -494,16 +504,6 @@ __metadata:
   checksum: ca6c170f37640e2d94297da8bb4bf27a1d12bea3e00e6a3e007fd7aa32e37e000f5772acf941b4e4f3cf1c95c3752033d0c509af157ad8f526e7f00723b9eb9f
   languageName: node
   linkType: hard
-
-"git-utilities@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "git-utilities@workspace:."
-  dependencies:
-    eslint: ^8.22.0
-    eslint-config-prettier: ^8.5.0
-    prettier: 2.7.1
-  languageName: unknown
-  linkType: soft
 
 "glob-parent@npm:^5.1.2":
   version: 5.1.2

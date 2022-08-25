@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Git-Utilities</h1>
+<h1 style="text-align: center;">abstgit</h1>
 
 <p style="text-align: center;">A set of helper functions for git</p>
 
@@ -6,22 +6,22 @@
 
 ## Introduction
 
-Git has revolutionized the developement space. It helps massevely with collaboration in small and big projects. But there is no modern abstraction over git that you can use for your projects. Git-Utilities aims to be a minimal (no dependencies) set of helper functions for working with git. 
+Git has revolutionized the developement space. It helps massevely with collaboration in small and big projects. But there is no modern abstraction over git that you can use for your projects. abstgit aims to be a minimal (no dependencies) set of helper functions for working with git. 
 
 ## Installation
 
 ```sh
-npm i --save-dev git-utilities
+npm i --save-dev abstgit
 ```
 
 Yarn & pnpm are also supported.
 
-Git-Utilities requires node v12 (you need to enable esm), but we officially support only the latest LTS and it's tested on the latest version of Node. if you encounter issues with a version below the LTS, don't expect much help.
+abstgit requires node v12 (you need to enable esm), but we officially support only the latest LTS and it's tested on the latest version of Node. if you encounter issues with a version below the LTS, don't expect much help.
 
 ## Usage
 
 ```js
-import { clone } from 'git-utilities/clone/clone';
+import { clone } from 'abstgit/clone/clone';
 
 clone("micziz/git-utlis")
 ```
@@ -31,9 +31,9 @@ This will clone in the current node direcotry (generally the root of your projec
 If you want to clone to a specific direcotry, use cloneTo.
 
 ```js
-import { cloneTo } from 'git-utilities/clone/clone';
+import { cloneTo } from 'abstgit/clone/clone';
 
-cloneTo("micziz/git-utilities", "utils")
+cloneTo("micziz/abstgit", "utils")
 ```
 
 Check the [documentation](docs/) for all the available utilities!

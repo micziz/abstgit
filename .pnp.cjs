@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "git-utilities",\
+        "name": "abstgit",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["git-utilities", ["workspace:."]]\
+      ["abstgit", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -34,7 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["eslint", "npm:8.22.0"],\
-            ["eslint-config-prettier", "virtual:5a0cbbdb1537a9a27018a41901f132f14f13822509b4648f73c0be566cdb166efd58e75636c2d41ad95fb6c165320e00e1489c50f4d1c8b7bb1a8ed6a5a3013f#npm:8.5.0"],\
+            ["eslint-config-prettier", "virtual:041ff7a79bc1599eb1857e926923005b862b7dbb64bb6e4b45d290dff9b10016e194865b62d2e674353ae41ee33ca23046f591cb5af9b469dd85d51bbe34db76#npm:8.5.0"],\
             ["prettier", "npm:2.7.1"]\
           ],\
           "linkType": "SOFT"\
@@ -117,6 +117,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastq", "npm:1.13.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["abstgit", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["abstgit", "workspace:."],\
+            ["eslint", "npm:8.22.0"],\
+            ["eslint-config-prettier", "virtual:041ff7a79bc1599eb1857e926923005b862b7dbb64bb6e4b45d290dff9b10016e194865b62d2e674353ae41ee33ca23046f591cb5af9b469dd85d51bbe34db76#npm:8.5.0"],\
+            ["prettier", "npm:2.7.1"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["acorn", [\
@@ -407,10 +419,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5a0cbbdb1537a9a27018a41901f132f14f13822509b4648f73c0be566cdb166efd58e75636c2d41ad95fb6c165320e00e1489c50f4d1c8b7bb1a8ed6a5a3013f#npm:8.5.0", {\
-          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-d0d40d4545/0/cache/eslint-config-prettier-npm-8.5.0-a1dd58b6d8-0d0f5c32e7.zip/node_modules/eslint-config-prettier/",\
+        ["virtual:041ff7a79bc1599eb1857e926923005b862b7dbb64bb6e4b45d290dff9b10016e194865b62d2e674353ae41ee33ca23046f591cb5af9b469dd85d51bbe34db76#npm:8.5.0", {\
+          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-f2f7690324/0/cache/eslint-config-prettier-npm-8.5.0-a1dd58b6d8-0d0f5c32e7.zip/node_modules/eslint-config-prettier/",\
           "packageDependencies": [\
-            ["eslint-config-prettier", "virtual:5a0cbbdb1537a9a27018a41901f132f14f13822509b4648f73c0be566cdb166efd58e75636c2d41ad95fb6c165320e00e1489c50f4d1c8b7bb1a8ed6a5a3013f#npm:8.5.0"],\
+            ["eslint-config-prettier", "virtual:041ff7a79bc1599eb1857e926923005b862b7dbb64bb6e4b45d290dff9b10016e194865b62d2e674353ae41ee33ca23046f591cb5af9b469dd85d51bbe34db76#npm:8.5.0"],\
             ["@types/eslint", null],\
             ["eslint", "npm:8.22.0"]\
           ],\
@@ -639,18 +651,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["functional-red-black-tree", "npm:1.0.1"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["git-utilities", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["git-utilities", "workspace:."],\
-            ["eslint", "npm:8.22.0"],\
-            ["eslint-config-prettier", "virtual:5a0cbbdb1537a9a27018a41901f132f14f13822509b4648f73c0be566cdb166efd58e75636c2d41ad95fb6c165320e00e1489c50f4d1c8b7bb1a8ed6a5a3013f#npm:8.5.0"],\
-            ["prettier", "npm:2.7.1"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["glob", [\
