@@ -16,7 +16,7 @@ npm i --save-dev git-utils
 
 Yarn & pnpm are also supported.
 
-git-utils requires node v12 (you need to enable esm), but we officially support only the latest LTS and it's tested on the latest version of Node if you encounter issues with a version below the LTS, don't expect much help.
+git-utils requires node v12 (you need to enable esm), but we officially support only the latest LTS and it's tested on the latest version of Node. if you encounter issues with a version below the LTS, don't expect much help.
 
 ## Usage
 
