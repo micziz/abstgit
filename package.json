@@ -1,6 +1,6 @@
 {
   "name": "abstgit",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A set of helper functions to use git",
   "homepage": "https://github.com/micziz/abstgit#readme",
   "main": "bundle.js",
